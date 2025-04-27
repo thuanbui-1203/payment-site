@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scan or Click to Pay</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        html::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+            scale: 1.1;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* min-height: 100vh; */
+            margin: 0;
+            padding: 20px;
+        }
+        body h1 {
+            font-family: "Poppins", sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 5px;
+            color: #fff;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+        .qr-section-1 {
+            font-family: "Ubuntu", sans-serif;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 4s ease infinite;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .qr-section-2 {
+            font-family: "Ubuntu", sans-serif;
+            background: linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 4s ease infinite;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+            width: 300px;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 2cqw;
+            transition: 0.2s ease-in;
+        }
+        img:hover {
+            scale: 1.1;
+            cursor: pointer;
+        }
+        .note {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Scan or Click to Pay</h1>
+
+    <div class="container">
+        <div class="qr-1">
+            <div class="qr-section-1">
+                <h2>Techcombank</h2>
+                <p>BUI NGOC THUAN<br>Account: 1903 6437 0090 10</p>
+                <img src="./images/21feb2cf61bbd3e58aaa.jpg" alt="Techcombank QR Code">
+            </div>
+        </div>
+        
+        <div class="qr-2">
+            <div class="qr-section-2">
+                <h2>MoMo</h2>
+                <p>BUI NGOC THUAN<br>Phone: 0907654582</p>
+                <div style="height: 30px;"></div>
+                <img src="./images/874685484f3cfd62a42d.jpg" alt="MoMo QR Code">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
